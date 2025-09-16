@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • Taniti</title>
+  <meta name="description" content="Contact Taniti tourism office for travel questions or support." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#home">
+        <span class="brand__name">Taniti</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul id="menu" class="menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="things.html">Things to Do</a></li>
+          <li><a href="stay.html">Places to Stay</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn btn--sm" href="booking.html">Book</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <section class="section hero hero-banner subhero" style="--hero-img: url('images/hero-contact.jpg');">
+      <div class="container stack center gap-2">
+        <h1 class="h1 hero__title">Contact Us</h1>
+        <p class="hero__sub">We’re here to answer your questions about Taniti.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2">
+        <!-- Contact Form -->
+        <form class="card stack gap-2" action="#" method="post">
+          <h2 class="h2">Send us a message</h2>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+
+        <!-- Contact Info -->
+        <aside class="card stack gap-2">
+          <h2 class="h3">Tourism Office</h2>
+          <p><strong>Address:</strong><br>123 Island Rd, Taniti</p>
+          <p><strong>Phone:</strong> (555) 123-4567<br>
+             <strong>Email:</strong> hello@taniti.example</p>
+          <p>Open Monday – Saturday<br>9am – 5pm local time</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-meta">
+      <small>&copy; <span id="year"></span> Taniti</small>
+    </div>
+  </footer>
+
+  <script>
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

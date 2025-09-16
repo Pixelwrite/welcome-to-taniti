@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Visit Taniti</title>
+  <meta name="description" content="Tourism website for the island of Taniti — plan your trip, explore things to do, and read traveler reviews." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Top Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="brand__name">Taniti</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul id="menu" class="menu">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="things.html">Things to Do</a></li>
+            <li><a href="stay.html">Places to Stay</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="btn btn--sm" href="booking.html">Book</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <!-- HERO -->
+    <section id="home" class="section hero hero-banner center">
+      <div class="container stack gap-3">
+        <h1 class="h1 hero__title">Welcome to Taniti</h1>
+        <p class="hero__sub">A tropical escape for the whole family - emerald peaks, turquoise lagoons, and warm island culture.</p>
+        <p><a id="book" class="btn btn--lg" href="booking.html">Book Here</a></p>
+      </div>
+    </section>
+
+    <!-- THREE FEATURE CARDS -->
+    <section id="things" class="section">
+      <div class="container">
+        <div class="grid grid-3">
+          <article class="card">
+            <img class="card__img img-cover" src="images/lagoons.jpg" alt="Taniti's clear lagoon with overwater bungalows" loading="lazy" />
+            <h2 class="card__title">Crystal Lagoons</h2>
+            <p>Swim, snorkel, or paddle along calm, clear waters surrounded by coral gardens teeming with reef life.</p>
+            <a href="#" class="text-link">Explore lagoons</a>
+          </article>
+          <article class="card">
+            <img class="card__img img-cover" src="images/jungle-trail.jpg" alt="Lush jungle trail to a waterfall on Taniti" loading="lazy" />
+            <h2 class="card__title">Jungle Trails</h2>
+            <p>Hike lush rainforest paths to hidden waterfalls and mountain lookouts with panoramic island views.</p>
+            <a href="#" class="text-link">View trails</a>
+          </article>
+          <article class="card">
+            <img class="card__img img-cover" src="images/island-dining.jpg" alt="Beachside dinner at sunset with Polynesian dishes" loading="lazy" />
+            <h2 class="card__title">Island Flavors</h2>
+            <p>Savor fresh-caught seafood, tropical fruit, and Polynesian-inspired cuisine right on the beach.</p>
+            <a href="#" class="text-link">Find dining</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY TANITI -->
+    <section id="stay" class="section section--alt">
+      <div class="container grid grid-sidebar">
+        <article class="prose">
+          <h2 class="h2">Why Taniti?</h2>
+          <p>Taniti blends pristine nature with friendly, small-island hospitality. Whether you’re after adventure or pure relaxation, you’ll find it here.</p>
+          <ul>
+            <li>Year‑round warm weather and calm waters</li>
+            <li>Eco‑friendly stays from beach bungalows to boutique villas</li>
+            <li>Culture-forward tours, music, dance, and craft markets</li>
+          </ul>
+        </article>
+        <aside class="sidebar card stack gap-2" aria-label="Plan your stay">
+          <h3 class="h3">Plan Your Trip</h3>
+          <p>Ready when you are. Check availability and packages.</p>
+          <a class="btn" href="#plan">Start Planning</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PLAN / BOOK SECTION -->
+    <section id="plan" class="section">
+      <div class="container grid grid-2">
+        <div class="card stack gap-2">
+          <h2 class="h2">Stay in Paradise</h2>
+          <p>Choose from water villas, family resorts, or quiet garden bungalows close to the shore.</p>
+          <a class="btn" href="#">See Accommodations</a>
+        </div>
+        <div class="card stack gap-2">
+          <h2 class="h2">Packages & Deals</h2>
+          <p>Bundle flights, transfers, and activities to save on your Taniti adventure.</p>
+          <a class="btn btn--ghost" href="#">View Packages</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="reviews" class="section testimonials">
+      <div class="container">
+        <h2 class="h2 center">Our Visitors Love Taniti!</h2>
+        <div class="grid grid-3">
+          <figure class="quote">
+            <blockquote>“Hands‑down the most beautiful water I’ve ever seen.”</blockquote>
+            <figcaption>— Alex R.</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“The hikes were magical and the food… unforgettable.”</blockquote>
+            <figcaption>— Priya S.</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“Perfect for a quiet honeymoon—already planning our return.”</blockquote>
+            <figcaption>— Mateo & Lina</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container grid grid-3">
+      <div class="stack gap-2">
+        <h3 class="h3">About Taniti</h3>
+        <p>A beautiful island to spend your vacation at.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="stack gap-1 list-unstyled">
+          <li><a href="#things">Things to Do</a></li>
+          <li><a href="#plan">Plan</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </nav>
+      <div class="stack gap-1">
+        <h3 class="h3">Get Updates</h3>
+        <form class="row gap-1" action="#" method="post">
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <button class="btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer-meta">
+      <small>&copy; <span id="year"></span> Taniti</small>
+    </div>
+  </footer>
+
+  <script>
+    // Accessible nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('menu--open');
+      });
+    }
+    // Year in footer
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
